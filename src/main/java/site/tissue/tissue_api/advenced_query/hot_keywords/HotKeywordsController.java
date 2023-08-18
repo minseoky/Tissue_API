@@ -5,8 +5,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import site.tissue.tissue_api.news_articles.NewsArticles;
-import site.tissue.tissue_api.news_articles.NewsArticlesRowMapper;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
