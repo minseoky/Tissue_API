@@ -1,4 +1,4 @@
-package site.tissue.tissue_api.advenced_query.hot_keywords;
+package site.tissue.tissue_api.advanced_query.hot_keywords;
 
 public class HotKeywords {
     String Keyword;

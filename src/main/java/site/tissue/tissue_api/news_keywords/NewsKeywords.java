@@ -2,11 +2,11 @@ package site.tissue.tissue_api.news_keywords;
 
 public class NewsKeywords {
     int id;
-    String keywords;
+    String keyword;
 
     public NewsKeywords(int id, String keywords) {
         this.id = id;
-        this.keywords = keywords;
+        this.keyword = keywords;
     }
 
     public int getId() {
@@ -17,11 +17,11 @@ public class NewsKeywords {
         this.id = id;
     }
 
-    public String getKeywords() {
-        return keywords;
+    public String getKeyword() {
+        return keyword;
     }
 
-    public void setKeywords(String keywords) {
-        this.keywords = keywords;
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
     }
 }

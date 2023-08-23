@@ -12,9 +12,11 @@ public class DataSourceConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://192.168.0.84:3306/tissue_db?serverTimezone=UTC&characterEncoding=UTF-8");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/tissue_db?serverTimezone=UTC&characterEncoding=UTF-8");
+        //dataSource.setUrl("jdbc:mysql://192.168.0.84:3306/tissue_db?serverTimezone=UTC&characterEncoding=UTF-8");
         dataSource.setUsername("tissue");
-        dataSource.setPassword("1234");
+        dataSource.setPassword("Choi304706!");
+        //dataSource.setPassword("1234");
         return dataSource;
     }
 }
