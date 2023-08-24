@@ -42,7 +42,7 @@ public class NewsSummariesController {
             String endOfDay = formattedDate + " 23:59";
 
             List<NewsSummaries> newsSummariesList = jdbcTemplate.query(
-                    "SELECT * FROM news_articles a, news_summaries b WHERE a.id = b.id AND a.DATE >= ? AND a.DATE <= ?",
+                    "SELECT * FROM NEWS_ARTICLES a, NEWS_SUMMARIES b WHERE a.id = b.id AND a.DATE >= ? AND a.DATE <= ?",
                     new Object[]{startOfDay, endOfDay},
                     new NewsSummariesRowMapper()
             );

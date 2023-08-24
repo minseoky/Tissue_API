@@ -41,7 +41,7 @@ public class NewsKeywordsController {
             String endOfDay = formattedDate + " 23:59";
 
             List<NewsKeywords> newsKeywordsList = jdbcTemplate.query(
-                    "SELECT * FROM news_articles a, news_keywords b WHERE a.id = b.id AND a.DATE >= ? AND a.DATE <= ?",
+                    "SELECT * FROM NEWS_ARTICLES a, NEWS_KEYWORDS b WHERE a.id = b.id AND a.DATE >= ? AND a.DATE <= ?",
                     new Object[]{startOfDay, endOfDay},
                     new NewsKeywordsRowMapper()
             );

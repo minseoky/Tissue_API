@@ -39,7 +39,7 @@ public class NewsArticlesController {
             String endOfDay = formattedDate + " 23:59";
 
             List<NewsArticles> newsArticlesList = jdbcTemplate.query(
-                    "SELECT * FROM news_articles WHERE DATE >= ? AND DATE <= ?",
+                    "SELECT * FROM NEWS_ARTICLES WHERE DATE >= ? AND DATE <= ?",
                     new Object[]{startOfDay, endOfDay},
                     new NewsArticlesRowMapper()
             );

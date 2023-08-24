@@ -40,8 +40,8 @@ public class NumOfKeywordsPerDayController {
             String endOfDay = formattedDate + " 23:59";
             List<NumOfKeywordsPerDay> numOfKeywordsPerDayList = jdbcTemplate.query(
                     "SELECT a.KEYWORD, COUNT(*) AS Frequency\n" +
-                            "FROM news_keywords a\n" +
-                            "JOIN news_articles b ON a.ID = b.ID\n" +
+                            "FROM NEWS_KEYWORDS a\n" +
+                            "JOIN NEWS_ARTICLES b ON a.ID = b.ID\n" +
                             "WHERE b.DATE >= ? AND b.DATE <= ? AND a.KEYWORD = ?\n" +
                             "GROUP BY a.KEYWORD\n" +
                             "ORDER BY Frequency DESC\n",

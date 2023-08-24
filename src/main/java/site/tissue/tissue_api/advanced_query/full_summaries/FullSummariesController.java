@@ -39,9 +39,9 @@ public class FullSummariesController {
             String endOfDay = formattedDate + " 23:59";
             List<FullSummaries> fullSummariesList = jdbcTemplate.query(
                     "SELECT b.IMG_URL, b.DATE, b.PRESS, b.TITLE, b.URL, a.SUMMARY, b.CONTENT\n" +
-                            "FROM news_summaries a\n" +
-                            "JOIN news_articles b ON a.ID = b.ID\n" +
-                            "JOIN news_keywords c ON a.ID = c.ID\n" +
+                            "FROM NEWS_SUMMARIES a\n" +
+                            "JOIN NEWS_ARTICLES b ON a.ID = b.ID\n" +
+                            "JOIN NEWS_KEYWORDS c ON a.ID = c.ID\n" +
                             "WHERE b.DATE >= ? AND b.DATE <= ? AND c.KEYWORD = ?\n" +
                             "ORDER BY b.DATE DESC\n" +
                             "LIMIT ?",
