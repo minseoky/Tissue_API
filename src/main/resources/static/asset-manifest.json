@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.d3d79b46.css",
-    "main.js": "/static/js/main.b0b353eb.js",
+    "main.js": "/static/js/main.06ed44eb.js",
     "static/media/Tissue.gif": "/static/media/Tissue.abf494b66a395d45fd91.gif",
     "static/media/Tissue.png": "/static/media/Tissue.d876d08c5c3a218f3a78.png",
     "index.html": "/index.html",
     "main.d3d79b46.css.map": "/static/css/main.d3d79b46.css.map",
-    "main.b0b353eb.js.map": "/static/js/main.b0b353eb.js.map"
+    "main.06ed44eb.js.map": "/static/js/main.06ed44eb.js.map"
   },
   "entrypoints": [
     "static/css/main.d3d79b46.css",
-    "static/js/main.b0b353eb.js"
+    "static/js/main.06ed44eb.js"
   ]
 }
